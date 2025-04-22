@@ -8,9 +8,9 @@ It also has **Error Handling** which detects undeclared variables, type mismatch
 
 ## Files Included  
 - **`l_lab3.l`** - Lex file for lexical analysis (tokenizing input).  
-- **`par077.y`** - Yacc file for syntax parsing and validation.  
+- **`par109.y`** - Yacc file for syntax parsing and validation.  
 - **`sym_tab3.c` & `sym_tab.h`** - Symbol table implementation.  
-- **`par077.tab.c` & `par077.tab.h`** - Auto-generated parser files by Bison.  
+- **`par109.tab.c` & `par077.tab.h`** - Auto-generated parser files by Bison.  
 - **`y.tab.c` & `y.tab.h`** - Additional parser files (if required).  
 - **`lex.yy.c`** - Auto-generated scanner file by Flex.  
 - **`a.exe`** - Compiled executable (Windows).  
@@ -18,7 +18,7 @@ It also has **Error Handling** which detects undeclared variables, type mismatch
 
 ## Compilation & Execution   
 ```sh
-bison -dy par077.y
+bison -dy par109.y
 flex l_lab3.l
 gcc y.tab.c lex.yy.c
 a.exe  // to run the program 
